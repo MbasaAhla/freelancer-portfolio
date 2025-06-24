@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelancer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body class="text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+
+  <!-- Navbar -->
+  <header class="p-4 flex justify-between items-center shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
+    <h1 class="text-xl font-bold">Mbasa's</h1>
+    <nav>
+      <ul class="flex gap-4">
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-500">Work</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        <li><button onclick="toggleDarkMode()">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Mbasa Cutshwa</h2>
+<p class="text-xl mb-6">Frontend Developer & UI/UX Enthusiast</p>
+    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700">Hire Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-4 max-w-4xl mx-auto" data-aos="slide-left">
+    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
+    <p>I'm a South African frontend developer with a passion for clean, responsive design. I build modern websites using HTML, Tailwind, and JavaScript — and I love solving real-world problems with code.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-4 bg-gray-100 dark:bg-gray-800" data-aos="zoom-in">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+<span>HTML5</span>
+<span>Tailwind CSS</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>Git & GitHub</span>
+<span>Responsive Design</span>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6 text-center">My Work</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-700 rounded shadow p-4" data-aos="flip-up">
+  <img src="assets/images/focusroulette.png" alt="Focus Roulette App" class="rounded mb-2" />
+  <h4 class="font-bold">Focus Roulette</h4>
+  <p>A productivity web app that helps you stay focused using the Pomodoro technique and random challenges.</p>
+</div>
+<!-- Focus Roulette - Alternate View -->
+<div class="bg-white dark:bg-gray-700 rounded shadow p-4" data-aos="flip-up">
+  <img src="assets/images/focusroulette2.png" alt="Focus Roulette Preview 2" class="rounded mb-2" />
+  <h4 class="font-bold">Focus Roulette (UI View)</h4>
+  <p>Alternate interface showing roulette spinner in action. Fully responsive and styled for dark mode.</p>
+</div>
+      <!-- Add more project cards -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="py-20 px-4 bg-gray-100 dark:bg-gray-800">
+  <h3 class="text-3xl font-semibold mb-6 text-center">Contact Me</h3>
+  <form
+    action="https://formspree.io/f/mldnpaag"
+    method="POST"
+    class="max-w-xl mx-auto space-y-4"
+    data-aos="fade-up"
+  >
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      class="w-full p-3 rounded border text-black"
+      required
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      class="w-full p-3 rounded border text-black"
+      required
+    />
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      rows="5"
+      class="w-full p-3 rounded border text-black"
+      required
+    ></textarea>
+    <button
+      type="submit"
+      class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+    >
+      Send
+    </button>
+  </form>
+</section>
+
+
+  <script src="script.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
